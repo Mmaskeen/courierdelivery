@@ -1,0 +1,398 @@
+	/* =============================================
+			Theme Reset Style					
+============================================= */
+*,
+div{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+	--transition:  all 300ms ease-in-out;
+	--white: #fff;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+*:after,
+*:before{ transition: var(--transition); }
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('fonts/webfonts/MYRIADPRO-REGULAR.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Condensed'), url('fonts/webfonts/MYRIADPRO-CONDIT.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Condensed Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Condensed Italic'), url('fonts/webfonts/MYRIADPRO-CONDIT.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Light';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Light'), url('fonts/webfonts/MyriadPro-Light.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Semibold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold'), url('fonts/webfonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Semibold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold Italic'), url('fonts/webfonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Bold Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold Condensed'), url('fonts/webfonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold'), url('fonts/webfonts/MYRIADPRO-BOLD.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold Italic'), url('fonts/webfonts/MYRIADPRO-BOLDIT.woff') format('woff');
+	}
+	
+	
+	@font-face {
+	font-family: 'Myriad Pro Bold Condensed Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold Condensed Italic'), url('fonts/webfonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+	}
+
+
+body {
+	color: var(--white);
+	background-color: var(--white);
+	font:400 14px/23px 'Myriad Pro', Arial, Helvetica, sans-serif;
+}
+body::-webkit-scrollbar {width: 0;}
+a {
+	text-decoration: none;
+	transition: var(--transition);
+}
+a:hover, a:focus, a:active {
+	outline: none;
+	text-decoration: none;
+}
+/* =============================================
+			Theme Styling						
+============================================= */
+.at-wrapper {
+	overflow: hidden;
+}/* =============================================
+			header Style  Start				
+============================================= */
+.at-header{
+	width: 100%;
+	float: left;
+	background: #fff;
+	padding: 30px 50px;
+	border-bottom: 10px solid #000;
+}
+.at-topbar{
+	width: 100%;
+	float: left;
+}
+.at-logo{float: left;}
+.at-logo a,
+.at-logo a img{display: block;}
+.at-logo a img{
+	width: 100%;
+	height: auto;
+}
+.at-headercontent{
+	left: 50%;
+	padding: 45px 0 0;
+	text-align: center;
+	position: absolute;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.at-headercontent span{
+	color: #000;
+	display: block;
+	font-size: 20px;
+	line-height: 23px;
+	font-family: 'Myriad Pro Bold';
+}
+.at-headercontent h2 span,
+.at-headercontent h2{
+	margin: 0;
+	color: #000;
+	font-size: 24px;
+	line-height: 27px;
+	font-family: 'Myriad Pro Regular';
+}
+.at-headercontent h2 span{display: block;}
+.at-benyarlogo{float: right;}
+.at-benyarlogo a,
+.at-benyarlogo a img{display: block;}
+.at-benyarlogo a img{
+	width: 100%;
+	height: auto;
+}
+/* =============================================
+			header Style  END				
+============================================= */
+/* =============================================
+			main Style  Start				
+============================================= */
+.at-main{
+	width: 100%;
+	float: left;
+}
+.at-content{
+	width: 100%;
+	float: left;
+	padding: 0 60px 20px;
+}
+.at-bulidinvoiceholder{
+	width: 100%;
+	float: left;
+	padding: 70px 0 100px;
+	border-bottom: 5px solid #8294a1;
+}
+.at-bulidinvoiceholder ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	list-style: none;
+}
+.at-bulidinvoiceholder ul li{
+	float: left;
+	width: 33.33%;
+	list-style-type: none;
+}
+.at-bulidinvoiceholder ul li.at-invoicetotal{
+	width: auto;
+	float: right;
+	text-align: center;
+}
+.at-bulidinvoiceholder ul li em{
+	display: block;
+	font-size: 18px;
+	color: #969595;
+	line-height: 21px;
+	padding: 0 0 15px;
+	font-style: normal;
+	text-transform: capitalize;
+	font-family: 'Myriad Pro Regular';
+}
+.at-bulidinvoiceholder ul li span{
+	color: #000;
+	display: block;
+	font-size: 20px;
+	line-height: 30px;
+	text-transform: capitalize;
+	font-family: 'Myriad Pro Semibold';
+}
+.at-invoice{
+	width: 100%;
+	float: left;
+	padding: 0 0 30px;
+}
+.at-dateissues{
+	width: 100%;
+	float: left;
+}
+.at-bulidinvoiceholder ul li:last-child span{
+	font-size: 44px;
+	color: #7e8f9d;
+	display: inline-block;
+}
+.at-bulidinvoiceholder ul li:last-child span em{
+	font-size: 24px;
+	color: #7e8f9d;
+	display: inline-block;
+}
+.at-itemtable{
+	width: 100%;
+	float: left;
+}
+.at-itemtable ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	list-style: none;
+}
+.at-itemtable ul li{
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+	list-style-type: none;
+	border-bottom: 2px solid #e4e4e4;
+
+}
+.at-itemtable ul li:first-child{border: 0;}
+.at-itemtable ul li:first-child span{color: #8e9daa;}
+.at-itemtable ul li span{
+	float: left;
+	color: #000;
+	font-size: 20px;
+	line-height: 23px;
+	text-transform: capitalize;
+	font-family: 'Myriad Pro Regular';
+}
+.at-itemtable ul li span em{
+	display: block;
+	font-size: 16px;
+	padding: 8px 0 0;
+	color: #838282;
+	line-height: 19px;
+	font-style: normal;
+	text-transform: inherit;
+}
+.at-itemdescription{width: 60%;}
+.at-cost{width: 20%;}
+.at-qauntity{width: 15%;}
+.at-totalamount{width: 5%;}
+.at-padding{padding: 0 0 0 10px;}
+.at-decription{
+	width: 100%;
+	float: left;
+	padding: 15px 5px;
+	text-transform: uppercase;
+	border: 2px solid #000;
+}
+.at-decription p{
+	margin: 0;
+	color: #000;
+	font-size: 23px;
+	line-height: 30px;
+	font-family: 'Myriad Pro Semibold';
+}
+@media (max-width:1199px){
+	.at-header{padding: 30px;}
+	.at-logo{width: 220px;}
+	.at-headercontent span{
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.at-headercontent h2 span,
+	.at-headercontent h2{
+		font-size: 17px;
+		line-height: 20px;
+	}
+	.at-benyarlogo{width: 180px;}
+	.at-decription{padding: 5px;}
+	.at-decription p {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+@media (max-width:800px){
+	.at-header{padding: 10px;}
+	.at-logo{width: 120px;}
+	.at-headercontent{padding: 0;}
+	.at-headercontent span{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.at-headercontent h2 span,
+	.at-headercontent h2{
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.at-benyarlogo{width: 100px;}
+	.at-decription p {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.at-bulidinvoiceholder{padding: 30px 0;}
+	.at-bulidinvoiceholder ul li em {
+		font-size: 13px;
+		padding: 0 0 5px;
+		line-height: 16px;
+	}
+	.at-bulidinvoiceholder ul li span {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.at-bulidinvoiceholder ul li:last-child span {font-size: 20px;}
+	.at-bulidinvoiceholder ul li:last-child span em {font-size: 14px;}
+}
+@media (max-width:567px){
+	.at-itemtable ul li span{
+		font-size: 12px;
+		line-height: 15px;
+	}
+	.at-itemtable ul li span em {
+		padding: 0;
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+@media (max-width:480px){
+	.at-header {border-bottom: 4px solid #000;}
+	.at-logo {width: 60px;}
+	.at-benyarlogo {width: 50px;}
+	.at-headercontent span {
+		font-size: 8px;
+		line-height: 8px;
+	}
+	.at-headercontent h2 span, .at-headercontent h2 {
+		font-size: 8px;
+		line-height: 8px;
+	}
+	.at-content{padding: 0 10px 10px;}
+	.at-bulidinvoiceholder ul li em {
+		font-size: 10px;
+		line-height: 13px;
+	}
+	.at-bulidinvoiceholder ul li span {
+		font-size: 10px;
+		line-height: 13px;
+	}
+	.at-bulidinvoiceholder ul li:last-child span {font-size: 16px;}
+	.at-bulidinvoiceholder {padding: 10px 0;}
+	.at-invoice{padding: 0 0 10px;}
+	.at-bulidinvoiceholder ul li:last-child span em {font-size: 11px;}
+	.at-decription p {
+		font-size: 9px;
+		line-height: 12px;
+	}
+	.at-itemdescription {width: 50%;}
+	.at-bulidinvoiceholder {border-bottom: 3px solid #8294a1;}
+}
